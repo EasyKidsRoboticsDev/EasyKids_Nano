@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Arduino-NANO board for KBIDE
 
 ### Block mode
