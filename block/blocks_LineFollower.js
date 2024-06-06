@@ -54,38 +54,50 @@ module.exports = function (Blockly) {
       this.setHelpUrl("");
     }
   };
+  Blockly.Blocks['easykids_sw'] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("EasyKids: WaitForStart")
+      this.setInputsInline(true);
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setColour(90);
+   this.setTooltip("");
+   this.setHelpUrl("");
+    }
+  };
   Blockly.Blocks['easykids_sensormin'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineFollower: SenserMin <<< S0 :");
+        .appendField("LineFollower: Value Sensor Black >>> S0");
       this.appendValueInput("s0")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S1 :");
+        .appendField("S1");
       this.appendValueInput("s1")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S2 :");
+        .appendField("S2");
       this.appendValueInput("s2")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S3 :");
+        .appendField("S3");
       this.appendValueInput("s3")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S4 :");
+        .appendField("S4");
       this.appendValueInput("s4")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S5 :");
+        .appendField("S5");
       this.appendValueInput("s5")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S6 :");
+        .appendField("S6");
       this.appendValueInput("s6")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S7 :");
+        .appendField("S7");
       this.appendValueInput("s7")
         .setCheck("Number")
       this.setInputsInline(true);
@@ -99,35 +111,35 @@ module.exports = function (Blockly) {
   Blockly.Blocks['easykids_sensormax'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineFollower: SenserMax >>> S0 :");
+        .appendField("LineFollower: Value Sensor White >>> S0");
       this.appendValueInput("s0")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S1 :");
+        .appendField("S1");
       this.appendValueInput("s1")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S2 :");
+        .appendField("S2");
       this.appendValueInput("s2")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S3 :");
+        .appendField("S3");
       this.appendValueInput("s3")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S4 :");
+        .appendField("S4");
       this.appendValueInput("s4")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S5 :");
+        .appendField("S5");
       this.appendValueInput("s5")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S6 :");
+        .appendField("S6");
       this.appendValueInput("s6")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" S7 :");
+        .appendField("S7");
       this.appendValueInput("s7")
         .setCheck("Number")
       this.setInputsInline(true);
@@ -141,15 +153,15 @@ module.exports = function (Blockly) {
   Blockly.Blocks['easykids_linefollower'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineFollower: Speed :");
+        .appendField("LineFollower >>> Speed");
       this.appendValueInput("speed")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KP :");
+        .appendField("KP");
       this.appendValueInput("kp")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KD :");
+        .appendField("KD");
       this.appendValueInput("kd")
         .setCheck("Number")
       this.setInputsInline(true);
@@ -163,19 +175,19 @@ module.exports = function (Blockly) {
   Blockly.Blocks['easykids_linetime'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineFollowerTimer: Speed :");
+        .appendField("LineFollowerTimer >>> Speed");
       this.appendValueInput("speed")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KP :");
+        .appendField("KP");
       this.appendValueInput("kp")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KD :");
+        .appendField("KD");
       this.appendValueInput("kd")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" Timer :");
+        .appendField("Timer");
       this.appendValueInput("timer")
         .setCheck("Number")
       this.setInputsInline(true);
@@ -189,15 +201,15 @@ module.exports = function (Blockly) {
   Blockly.Blocks['easykids_linecross'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineFollowerCross: Speed :");
+        .appendField("LineFollowerCross >>> Speed");
       this.appendValueInput("speed")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KP :");
+        .appendField("KP");
       this.appendValueInput("kp")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KD :");
+        .appendField("KD");
       this.appendValueInput("kd")
         .setCheck("Number")
       this.setInputsInline(true);
@@ -211,15 +223,15 @@ module.exports = function (Blockly) {
   Blockly.Blocks['easykids_line90left'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineFollower 90 Left: Speed :");
+        .appendField("LineFollower 90 Left >>> Speed");
       this.appendValueInput("speed")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KP :");
+        .appendField("KP");
       this.appendValueInput("kp")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KD :");
+        .appendField("KD");
       this.appendValueInput("kd")
         .setCheck("Number")
       this.setInputsInline(true);
@@ -233,15 +245,15 @@ module.exports = function (Blockly) {
   Blockly.Blocks['easykids_line90right'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineFollower 90 Right: Speed :");
+        .appendField("LineFollower 90 Right >>> Speed");
       this.appendValueInput("speed")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KP :");
+        .appendField("KP");
       this.appendValueInput("kp")
         .setCheck("Number")
       this.appendDummyInput()
-        .appendField(" KD :");
+        .appendField("KD");
       this.appendValueInput("kd")
         .setCheck("Number")
       this.setInputsInline(true);
@@ -255,7 +267,7 @@ module.exports = function (Blockly) {
   Blockly.Blocks['easykids_lineturnleft'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineTurnLeft: Speed :");
+        .appendField("LineTurnLeft >>> Speed");
       this.appendValueInput("speed")
         .setCheck("Number")
       this.setInputsInline(true);
@@ -269,7 +281,7 @@ module.exports = function (Blockly) {
   Blockly.Blocks['easykids_lineturnright'] = {
     init: function () {
       this.appendDummyInput()
-        .appendField("LineTurnRight: Speed :");
+        .appendField("LineTurnRight >>> Speed");
       this.appendValueInput("speed")
         .setCheck("Number")
       this.setInputsInline(true);

@@ -156,6 +156,8 @@ module.exports = {
              </block>
              <block type="easykids_readsensor">
              </block>
+             <block type="easykids_sw">
+             </block>
              `
             },
             {

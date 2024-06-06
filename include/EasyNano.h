@@ -327,7 +327,7 @@ void lineTimer(int speed, float iKP, float iKD, long setTime)
 
 void lineCross(int setSpeed, float iKP, float iKD)
 {
-  if (NumSensor < 7)
+  if (NumSensor < 5)
   {
     return;
   }
